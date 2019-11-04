@@ -14,13 +14,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="fill_horizontal" >
+        android:layout_gravity="center" >
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/dice_image1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
             app:srcCompat="@drawable/empty_dice"
             tools:src="@drawable/dice_1" />
 
@@ -28,17 +28,32 @@
             android:id="@+id/dice_image2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
             app:srcCompat="@drawable/empty_dice"
             tools:src="@drawable/dice_2" />
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/roll_button"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/roll_label" />
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/roll_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/roll_label" />
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/clear_label" />
+
+    </LinearLayout>
 
 </LinearLayout>
